@@ -1,5 +1,5 @@
 /* tạo biến cho các kích thước của cột */
---root {
+:root {
     --col-1:8.33333%;
     --col-2:16.66667%;
     --col-3:25%;
@@ -17,6 +17,7 @@
 .grid {
     width: 100%;
     display: block; /* để áp dụng cho các thẻ kiểu inline */
+    padding: 0;
 }
 
 .grid.wide {
@@ -106,16 +107,16 @@
 }
 
 .s-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 var(--col-12);
+    max-width: var(--col-12)
 }
 
 .s-o-1 {
-    margin-left: 8.3333%;
+    margin-left: 8.33333%;
 }
 
 .s-o-2 {
-    margin-left: 16.6667%;
+    margin-left: 16.66667%;
 }
 
 .s-o-3 {
@@ -123,7 +124,7 @@
 }
 
 .s-o-4 {
-    margin-left: 33.3333%;
+    margin-left: 33.33333%;
 }
 
 .s-o-5 {
@@ -159,13 +160,6 @@
 }
 
 
-/* for tablet and pc low resolution */
-@media all and (min-width:740px) and (max-width:1023px) {
-    .wide {
-        width: 644px;
-    }
-}
-
 /* từ tablet trở lên */
 @media all and (min-width:740px) {
     .row {
@@ -182,6 +176,7 @@
         display: none;
     }
 
+    /* áp dụng trên tất cả các thẻ inline or block */
     .m-1,
     .m-2,
     .m-3,
@@ -452,7 +447,6 @@
     .l-o-11 {
         margin-left: var(--col-11);
     }
-
     
 }
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <title>demo-grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .course-item, .category {
+            background-color: #ccc;
+            height: 260px;
+        }
+
+        h1 {
+            line-height: 260px;
+            margin: 0;
+        }
+
+        ul {
+            margin-top: 0;
+        }
+
+        
+
+        @media all and (max-width:1023px) {
+            .course-item,.category {
+                margin-top:16px;
+            }
+             /* .col {
+                margin-top: 16px;
+             } */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="grid wide container">
+        <div class="row">
+            <div class="col l-3 m-0 s-0">
+                <div class="category">
+                    <ul>
+                        <li>HTML</li>
+                        <li>HTML</li>
+                        <li>HTML</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col l-9 m-12 s-12">
+                <div class="row">
+                    <div class="col l-4 m-6 s-12">
+                        <div class="course-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 s-12">
+                        <div class="course-item">
+                            <h1>course 2</h1>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 s-12">
+                        <div class="course-item">
+                            <h1>course 3</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</body>
+</html>

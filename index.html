@@ -3,32 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
     <link rel="stylesheet" href="./assets/css/grid.css">
     <title>Document</title>
     <style>
-        
-        .container {
-            background-color: orange;
-            
-            
+        * {
+            box-sizing: border-box;
         }
 
-        h1{
-            padding: 100px 0;
-            font-size: 50px;
-            color: #fff;
+        .col {
+            background-color: #ccc;
+            background-clip: content-box;
             text-align: center;
+            margin-top: 8px;
+            margin-bottom: 8px;
         }
+       
     </style>
 </head>
 <body>
-    <div class="grid wide container">
+    <div class="grid wide">
+        <!-- row 1 -->
         <div class="row">
-            <h1>grid system 1</h1>
-            <h1>grid system 2</h1>
-            <h1>grid system 3</h1>
+            <div class="col l-2 m-4 s-12">
+                <h2>pc-2 tblet-3 mbi-1</h2>
+            </div>
+            <div class="col l-2 m-4 s-12">
+                <h2>pc-2 tblet-3 mbi-1</h2>
+            </div>
+            <div class="col l-2 m-4 s-12">
+                <h2>pc-2 tblet-3 mbi-1</h2>
+            </div>
+            <div class="col l-2 m-4 s-12">
+                <h2>pc-2 tblet-3 mbi-1</h2>
+            </div>
+            <div class="col l-2 m-4 s-12">
+                <h2>pc-2 tblet-3 mbi-1</h2>
+            </div>
+            <div class="col l-2 m-4 s-12">
+                <h2>pc-2 tblet-3 mbi-1</h2>
+            </div>
         </div>
+        <!-- row 2 -->
+         <div class="row">
+            <div class="col l-3 m-6 s-6">
+                <h2>pc-3 tblet-2 mbi-2</h2>
+            </div>
+             <div class="col l-3 m-6 s-6">
+                <h2>pc-3 tblet-2 mbi-2</h2>
+            </div>
+             <div class="col l-3 m-6 s-6">
+                <h2>pc-3 tblet-2 mbi-2</h2>
+            </div>
+             <div class="col l-3 m-6 s-6">
+                <h2>pc-3 tblet-2 mbi-2</h2>
+            </div>
+         </div>
+
+         <!-- row 3 -->
+          <div class="row">
+            <div class="col l-4 m-12 s-12">
+                <h2>pc-4 tblet-12 mbi-12</h2>
+            </div>
+            <div class="col l-4 m-12 s-12">
+                <h2>pc-4 tblet-12 mbi-12</h2>
+            </div>
+            <div class="col l-4 m-12 s-12">
+                <h2>pc-4 tblet-12 mbi-12</h2>
+            </div>
+          </div>
     </div>
 </body>
 </html>
